@@ -1,4 +1,0 @@
-#Wed Jan 19 20:29:34 EST 2022
-base.0=/Users/drewnicolette/dart/testing/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
