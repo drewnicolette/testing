@@ -17,7 +17,7 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.ANDROID_KEYS_SECRET_PASSPHRASE }}" --output android/android_keys.zip android/android_keys.zip.gpg
       - name: Check files in directory
         run: |
-          ls -ltr .
+          cd android && ls -ltr .
       - name: Setup Java
         uses: actions/setup-java@v1
         with:
