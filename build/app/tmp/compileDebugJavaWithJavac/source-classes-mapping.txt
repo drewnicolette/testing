@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/flutterdrew/clicker2/flutterdrew2/BuildConfig.java
+ com.flutterdrew.clicker2.flutterdrew2.BuildConfig
