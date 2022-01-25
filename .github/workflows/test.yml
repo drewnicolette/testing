@@ -20,6 +20,10 @@ jobs:
         uses: subosito/flutter-action@v1
         with:
           channel: "stable"
+      - name: Update KeyStore password in gradle properties
+        run: sed -i 's/#{KEYSTORE_PASS}#/${{ secrets.KEYSTORE_PASS }}/g' android/key.properties
+      - name: Update KeyStore key password in gradle properties
+        run: sed -i 's/#{KEYSTORE_KEY_PASS}#/${{ secrets.KEYSTORE_KEY_PASS }}/g' android/key.properties
       - name: Install Flutter dependencies
         run: flutter pub get
         # Add build runner commands here if you have any
@@ -51,6 +55,10 @@ jobs:
         uses: subosito/flutter-action@v1
         with:
           channel: "stable"
+      - name: Update KeyStore password in gradle properties
+        run: sed -i 's/#{KEYSTORE_PASS}#/${{ secrets.KEYSTORE_PASS }}/g' android/key.properties
+      - name: Update KeyStore key password in gradle properties
+        run: sed -i 's/#{KEYSTORE_KEY_PASS}#/${{ secrets.KEYSTORE_KEY_PASS }}/g' android/key.properties
       - name: Install Flutter dependencies
         run: flutter pub get
       - name: Build the APK
