@@ -1,4 +1,4 @@
-package com.flutterdrew.clicker2.flutterdrew2
+package com.flutterdrew.clicker1.flutterdrew1
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.flutterdrew.clicker2.flutterdrew2">
+    package="com.flutterdrew.clicker1.flutterdrew1">
    <application
         android:label="flutterdrew2"
         android:name="${applicationName}"
