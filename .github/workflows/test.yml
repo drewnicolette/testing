@@ -18,7 +18,9 @@ jobs:
           cd android && jar xvf android_keys.zip
       - name: Check files in android directory
         run: |
-          mv ./android/android_keys/service_account.json android
+          mv ./android/android_keys/service_account.json ./android
+          mv ./android/android_keys/key.properties ./android
+          mv ./android/android_keys/flutterdrew1.jks ./android/app
       - name: Check files in android directory
         run: |
           cd android && ls -ltr .
