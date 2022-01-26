@@ -27,6 +27,9 @@ jobs:
       - name: Check files in android directory
         run: |
           cd android/app && ls -ltr .
+      - name: Get run number
+        run: |
+          echo ${{ github.run_number }}
       - name: Setup Java
         uses: actions/setup-java@v1
         with:
