@@ -16,7 +16,9 @@ jobs:
         run: |
           gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.ANDROID_KEYS_SECRET_PASSPHRASE }}" --output android/android_keys.zip android/android_keys.zip.gpg
           cd android && jar xvf android_keys.zip
-          cd android/android_keys && mv service_account.json android/
+      - name: Check files in android directory
+        run: |
+          mv ./android/android_keys/service_account.json android
       - name: Check files in android directory
         run: |
           cd android && ls -ltr .
